@@ -1,5 +1,5 @@
-import '@/styles/globals.css'
 import MainLayout from '@/components/Layout'
+import '@/styles/globals.css'
 import theme from '@/styles/theme'
 import { ThemeProvider } from '@mui/material'
 import type { AppProps } from 'next/app'
