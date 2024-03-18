@@ -1,12 +1,8 @@
 import DESIGN_TOKEN from '@/styles/token'
 import { createTheme } from '@mui/material'
-import { Inter } from 'next/font/google'
+import { Noto_Sans_Thai } from 'next/font/google'
 
-const inter = Inter({
-  weight: ['400'],
-  style: ['normal'],
-  subsets: ['latin'],
-})
+const inter = Noto_Sans_Thai({ subsets: ['thai', 'latin'] })
 
 const theme = createTheme({
   palette: {
