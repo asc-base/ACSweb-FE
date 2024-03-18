@@ -1,7 +1,25 @@
 const DESIGN_TOKEN = {
-  color: {
-    primary: '#ff9980',
-  },
-}
+  primary01: '#070220',
+  primary02: '#120554',
+  primary03: '#1E0887',
+  primary04: '#290CBA',
+  primary05: '#340FED',
+  primary06: '#E8E6F3',
+  secondary01: '#D3F2FB',
+  secondary02: '#BAECFB',
+  secondary03: '#88E1FB',
+  secondary04: '#6EDBFB',
+  secondary05: '#3CD0FB',
+  accent01: '#E89582',
+  accent02: '#E86F54',
+  accent03: '#E94925',
+  accent04: '#E8360E',
+  accent05: '#4D180C',
+  neutral01: '#FFFFFF',
+  neutral02: '#F2F2F2',
+  neutral03: '#CCCCCC',
+  neutral04: '#999999',
+  neutral05: '#4D4D4D',
+};
 
-export default DESIGN_TOKEN
+export default DESIGN_TOKEN;
