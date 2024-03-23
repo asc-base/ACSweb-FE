@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
+import NewsCard from './newsCard'
 
 export default function News() {
   const Title = styled(Typography)`
@@ -13,6 +14,9 @@ export default function News() {
   return (
     <div>
       <Title>ข่าวสารและกิจกรรม</Title>
+      <NewsCard />
+      <NewsCard />
+      <NewsCard />
     </div>
   )
 }

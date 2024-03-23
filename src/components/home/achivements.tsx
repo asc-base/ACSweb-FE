@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
+import NewsCard from './newsCard'
 
 export default function Achivements() {
   const Container = styled('div')``
@@ -16,6 +17,9 @@ export default function Achivements() {
       <Container>
         <Title>ความสำเร็จสาขาวิชา</Title>
       </Container>
+      <NewsCard />
+      <NewsCard />
+      <NewsCard />
     </div>
   )
 }
