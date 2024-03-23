@@ -3,6 +3,7 @@ import Activities from '@/components/home/activities'
 import ComingEvents from '@/components/home/comingEvents'
 import News from '@/components/home/news'
 import PublicRelation from '@/components/home/publicRelation'
+import StudentWorks from '@/components/home/studenetWorks'
 import Tumanail from '@/components/home/tumnail'
 import { Container, Grid } from '@mui/material'
 import { styled } from '@mui/material/styles'
@@ -39,6 +40,7 @@ export default function HomePage() {
             <Activities />
           </Grid>
         </Grid>
+        <StudentWorks />
       </ContainerWrapper>
     </>
   )
