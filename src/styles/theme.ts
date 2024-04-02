@@ -8,7 +8,13 @@ const sarabun = Sarabun({ weight: '400', subsets: ['thai', 'latin'] })
 const theme = createTheme({
   palette: {
     primary: {
-      main: DESIGN_TOKEN.color.primary,
+      main: DESIGN_TOKEN.color.primary[3],
+    },
+    secondary: {
+      main: DESIGN_TOKEN.color.secondary[2],
+    },
+    text: {
+      primary: DESIGN_TOKEN.color.primary[1],
     },
   },
   typography: {
@@ -44,6 +50,7 @@ const theme = createTheme({
     MuiTypography: {
       defaultProps: {
         variant: 'h5',
+        color: 'text.primary',
       },
     },
   },
