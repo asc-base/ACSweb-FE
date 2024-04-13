@@ -8,7 +8,6 @@ const Login: React.FC<Props> = (props) => {
   return (
     <div
       style={{
-        // backgroundColor: 'red',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         gridTemplateRows: '1fr',

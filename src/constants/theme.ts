@@ -1,4 +1,4 @@
-export const theme = {
+export const Colour = {
   Primary01: '#070220',
   Primary02: '#120554',
   Primary03: '#1E0887',

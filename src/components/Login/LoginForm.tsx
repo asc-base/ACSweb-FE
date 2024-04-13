@@ -1,6 +1,6 @@
 import { NUMBER_REGEX } from '@/constants/regex'
-import { theme } from '@/constants/theme'
-import { Button, TextField } from '@mui/material'
+import { Colour } from '@/constants/theme'
+import { Button, TextField, Typography } from '@mui/material'
 import React from 'react'
 
 interface Props {}
@@ -38,23 +38,22 @@ const LoginForm: React.FC<Props> = () => {
         }}
         sx={{
           '& .MuiOutlinedInput-root': {
-            color: theme.Primary03,
-            // fontSize: '24px',
+            color: Colour.Primary03,
           },
           '& .MuiInputLabel-root': {
-            color: inputValues.id ? theme.Primary03 : theme.Neutral03,
+            color: inputValues.id ? Colour.Primary03 : Colour.Neutral03,
             fontSize: '18px',
           },
           '& .MuiInputLabel-root.Mui-focused': {
-            color: theme.Primary03,
+            color: Colour.Primary03,
             fontSize: '18px',
           },
           '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-            borderColor: theme.Primary03,
+            borderColor: Colour.Primary03,
             fontSize: '18px',
           },
           '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
-            borderColor: inputValues.id ? theme.Primary03 : theme.Neutral03,
+            borderColor: inputValues.id ? Colour.Primary03 : Colour.Neutral03,
             fontSize: '18px',
           },
           width: '100%',
@@ -78,23 +77,23 @@ const LoginForm: React.FC<Props> = () => {
         type="password"
         sx={{
           '& .MuiOutlinedInput-root': {
-            color: theme.Primary03,
+            color: Colour.Primary03,
           },
           '& .MuiInputLabel-root': {
             fontSize: '18px',
-            color: inputValues.password ? theme.Primary03 : theme.Neutral03,
+            color: inputValues.password ? Colour.Primary03 : Colour.Neutral03,
           },
           '& .MuiInputLabel-root.Mui-focused': {
             fontSize: '18px',
-            color: theme.Primary03,
+            color: Colour.Primary03,
           },
           '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
             fontSize: '18px',
-            borderColor: theme.Primary03,
+            borderColor: Colour.Primary03,
           },
           '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
             fontSize: '18px',
-            borderColor: inputValues.password ? theme.Primary03 : theme.Neutral03,
+            borderColor: inputValues.password ? Colour.Primary03 : Colour.Neutral03,
           },
           width: '100%',
           fontSize: '24px',
@@ -103,9 +102,9 @@ const LoginForm: React.FC<Props> = () => {
         value={inputValues.password}
         onChange={handleInputChange}
       />
-      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '20px' }}>
+      <Typography style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '20px' }}>
         <a style={{ color: '#49454F', fontSize: '12px' }}>ลืมรหัสผ่าน?</a>
-      </div>
+      </Typography>
       <Button
         type="submit"
         variant="contained"
@@ -114,23 +113,23 @@ const LoginForm: React.FC<Props> = () => {
           fontWeight: 700,
           height: '55px',
           backgroundColor:
-            inputValues.id && inputValues.password ? theme.Primary02 : theme.Neutral03,
-          color: inputValues.id && inputValues.password ? theme.Neutral01 : theme.Neutral03,
+            inputValues.id && inputValues.password ? Colour.Primary02 : Colour.Primary02,
+          color: inputValues.id && inputValues.password ? Colour.Neutral01 : Colour.Neutral01,
           width: '100%',
           '&:hover': {
             backgroundColor:
-              inputValues.id && inputValues.password ? theme.Primary02 : theme.Neutral03,
+              inputValues.id && inputValues.password ? Colour.Primary02 : Colour.Neutral03,
           },
         }}
       >
-        เข้าสู่ระบบ
+        <Typography>เข้าสู่ระบบ</Typography>
       </Button>
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
-        <a style={{ color: theme.Primary05 }}>
+      <Typography style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+        <a style={{ color: Colour.Primary05 }}>
           ยังไม่เป็นสมาชิก?&nbsp;
           <a style={{ textDecorationLine: 'underline' }}>ลงทะเบียน</a>
         </a>
-      </div>
+      </Typography>
     </form>
   )
 }
