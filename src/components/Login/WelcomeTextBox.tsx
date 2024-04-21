@@ -1,5 +1,6 @@
 import theme from '@/styles/theme'
 import { Typography } from '@mui/material'
+
 import React from 'react'
 
 interface Props {}
@@ -12,6 +13,7 @@ const WelcomeTextBox: React.FC<Props> = () => {
           marginBottom: '20px',
           fontSize: '36px',
           fontWeight: '700',
+
           color: theme.palette.primary.main,
         }}
       >
@@ -22,6 +24,7 @@ const WelcomeTextBox: React.FC<Props> = () => {
           marginBottom: '20px',
           fontSize: '16px',
           fontWeight: '400',
+
           color: theme.palette.primary.main,
         }}
       >
