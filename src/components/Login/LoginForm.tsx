@@ -12,7 +12,7 @@ const LoginForm: React.FC<Props> = () => {
     password: '',
   })
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = event.target
     setInputValues((prevValues) => ({
       ...prevValues,
@@ -20,7 +20,7 @@ const LoginForm: React.FC<Props> = () => {
     }))
   }
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault()
     console.log(inputValues)
   }
