@@ -1,5 +1,6 @@
 import { NUMBER_REGEX } from '@/constants/regex'
-import { Colour } from '@/constants/theme'
+import theme from '@/styles/theme'
+import DESIGN_TOKEN from '@/styles/token'
 import { Button, TextField, Typography } from '@mui/material'
 import React from 'react'
 
@@ -38,22 +39,24 @@ const LoginForm: React.FC<Props> = () => {
         }}
         sx={{
           '& .MuiOutlinedInput-root': {
-            color: Colour.Primary03,
+            color: theme.palette.primary.main,
           },
           '& .MuiInputLabel-root': {
-            color: inputValues.id ? Colour.Primary03 : Colour.Neutral03,
+            color: inputValues.id ? theme.palette.primary.main : DESIGN_TOKEN.color.primary[6],
             fontSize: '18px',
           },
           '& .MuiInputLabel-root.Mui-focused': {
-            color: Colour.Primary03,
+            color: theme.palette.primary.main,
             fontSize: '18px',
           },
           '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-            borderColor: Colour.Primary03,
+            borderColor: theme.palette.primary.main,
             fontSize: '18px',
           },
           '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
-            borderColor: inputValues.id ? Colour.Primary03 : Colour.Neutral03,
+            borderColor: inputValues.id
+              ? theme.palette.primary.main
+              : DESIGN_TOKEN.color.primary[6],
             fontSize: '18px',
           },
           width: '100%',
@@ -77,23 +80,27 @@ const LoginForm: React.FC<Props> = () => {
         type="password"
         sx={{
           '& .MuiOutlinedInput-root': {
-            color: Colour.Primary03,
+            color: theme.palette.primary.main,
           },
           '& .MuiInputLabel-root': {
             fontSize: '18px',
-            color: inputValues.password ? Colour.Primary03 : Colour.Neutral03,
+            color: inputValues.password
+              ? theme.palette.primary.main
+              : DESIGN_TOKEN.color.primary[6],
           },
           '& .MuiInputLabel-root.Mui-focused': {
             fontSize: '18px',
-            color: Colour.Primary03,
+            color: theme.palette.primary.main,
           },
           '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
             fontSize: '18px',
-            borderColor: Colour.Primary03,
+            borderColor: theme.palette.primary.main,
           },
           '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
             fontSize: '18px',
-            borderColor: inputValues.password ? Colour.Primary03 : Colour.Neutral03,
+            borderColor: inputValues.password
+              ? theme.palette.primary.main
+              : DESIGN_TOKEN.color.primary[6],
           },
           width: '100%',
           fontSize: '24px',
@@ -113,19 +120,26 @@ const LoginForm: React.FC<Props> = () => {
           fontWeight: 700,
           height: '55px',
           backgroundColor:
-            inputValues.id && inputValues.password ? Colour.Primary02 : Colour.Primary02,
-          color: inputValues.id && inputValues.password ? Colour.Neutral01 : Colour.Neutral01,
+            inputValues.id && inputValues.password
+              ? theme.palette.primary.main
+              : DESIGN_TOKEN.color.primary[6],
+          color:
+            inputValues.id && inputValues.password
+              ? theme.palette.primary.main
+              : DESIGN_TOKEN.color.primary[6],
           width: '100%',
           '&:hover': {
             backgroundColor:
-              inputValues.id && inputValues.password ? Colour.Primary02 : Colour.Neutral03,
+              inputValues.id && inputValues.password
+                ? theme.palette.primary.main
+                : DESIGN_TOKEN.color.primary[6],
           },
         }}
       >
         <Typography>เข้าสู่ระบบ</Typography>
       </Button>
       <Typography style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
-        <a style={{ color: Colour.Primary05 }}>
+        <a style={{ color: DESIGN_TOKEN.color.primary[5] }}>
           ยังไม่เป็นสมาชิก?&nbsp;
           <a style={{ textDecorationLine: 'underline' }}>ลงทะเบียน</a>
         </a>

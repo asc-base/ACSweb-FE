@@ -1,4 +1,4 @@
-import { Colour } from '@/constants/theme'
+import theme from '@/styles/theme'
 import { Typography } from '@mui/material'
 import React from 'react'
 
@@ -12,7 +12,7 @@ const WelcomeTextBox: React.FC<Props> = () => {
           marginBottom: '20px',
           fontSize: '36px',
           fontWeight: '700',
-          color: Colour.Primary03,
+          color: theme.palette.primary.main,
         }}
       >
         Welcome Back!
@@ -22,7 +22,7 @@ const WelcomeTextBox: React.FC<Props> = () => {
           marginBottom: '20px',
           fontSize: '16px',
           fontWeight: '400',
-          color: Colour.Primary03,
+          color: theme.palette.primary.main,
         }}
       >
         สวัสดีนักศึกษาสาขาวิทยาการคอมพิวเตอร์ประยุกต์
