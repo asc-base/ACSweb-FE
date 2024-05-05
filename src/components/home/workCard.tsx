@@ -9,7 +9,7 @@ export default function WorkCard() {
   const Container = styled('div')`
     && {
       margin: 20px;
-      text-align: center;s
+      text-align: center;
     }
   `
   return (
@@ -19,14 +19,14 @@ export default function WorkCard() {
           <CardMedia
             component="img"
             height="180"
-            image="https://s3-alpha-sig.figma.com/img/86c0/9258/ec34f9e8bb4fa48d6ccad98fba27873a?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TPPwAyC52WXqWxyG1YIjpvFS07Vi3p0K3KL4YKw-dTLo3WsegdzEuaK-JrxlpyOigPXCMhtVP3c4ervJ6YwpO1UwXXfEU-QpXq9aVZIbvJSRraQlUDd7b81fsYQqpNk8g~DVxDuQysqQtr2Mh9mAzGS8e71mi~M3929v-Phkz6tC2kdYjJp4y1ydLRaDK~Th-vaI24U~uneIiT8124O2hFwg60cy9TAVhxqu3yo5rlUBCH2Qdu1a7uu1MZLwybTDrCGze-qmrcihtFjGYgZadYeOKrqiUbyGHXNPU7Qo5-kP7r~QuD0inubHChkpw~InnZbMEEqRF1BMBnuTKbjv-Q__"
+            image="https://s3-alpha-sig.figma.com/img/bde1/8838/f4a4939e52f2c77a9d314a358b09a5ec?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H5nOeQ3tzZzPpWS-N4OLSCA12To8~oTksWVSPiJ4KjdARPu~e-edk5VUSi1KQpgquUZZilcTHea2x5wpl1ct4Ui~bbbgqTggrhnwZJYLXNpA3ASJHcb6Bn4UV4eitHjZesbccf0DaI0n~sCUDDdZCDwuaM8DEaFM~Z3f4NOfP1LNR4FmeXI7wPGEWLOJ-xfgbK1H3S9II2R~UkVxeeR2UHJNjOx7Xx~VRQHKaksUvTjV-qppGY~82K2GK3N~Vp1Ufw6hZXuXEX~rsoIKTVVSDi-Osbep2mVpzU~RbSEHIaSjv7ykWncBZb5P7uNfhEmvou5-NcRu1Gdg0jKViYling__"
             alt="green iguana"
           />
           <CardContent>
-            <Typography gutterBottom variant="h6" component="div">
+            <Typography gutterBottom component="div">
               CSS123
             </Typography>
-            <Typography gutterBottom variant="h6" component="div">
+            <Typography gutterBottom component="div">
               Introduction to Computer Network
             </Typography>
           </CardContent>

@@ -1,18 +1,11 @@
 import { Typography } from '@mui/material'
-import { styled } from '@mui/material/styles'
 import NewsCard from './newsCard'
 export default function Activities() {
-  const Title = styled(Typography)`
-    && {
-      margin: 0;
-      font-weight: bold;
-      font-size: 24px;
-      color: #e8360e;
-    }
-  `
   return (
     <div>
-      <Title>งานกิจกรรมนักศึกษา</Title>
+      <Typography variant="h2" color="secondary" fontWeight="bold">
+        งานกิจกรรมนักศึกษา
+      </Typography>
       <NewsCard />
       <NewsCard />
       <NewsCard />

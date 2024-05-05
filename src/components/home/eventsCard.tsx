@@ -17,16 +17,11 @@ export default function EventsCard() {
   const Title = styled(Typography)`
     && {
       margin-left: 20px;
-      font-weight: bold;
-      font-size: 20px;
-      color: #000000;
     }
   `
   const SubTitle = styled(Typography)`
     && {
       margin-left: 20px;
-      font-size: 14px;
-      color: #000000;
     }
   `
   const data = {
@@ -37,23 +32,33 @@ export default function EventsCard() {
   return (
     <>
       <Card>
-        <Title>{data.title}</Title>
+        <Title variant="h3" fontWeight="bold">
+          {data.title}
+        </Title>
         <SubTitle>{data.subTitle}</SubTitle>
       </Card>
       <Card>
-        <Title>{data.title}</Title>
+        <Title variant="h3" fontWeight="bold">
+          {data.title}
+        </Title>
         <SubTitle>{data.subTitle}</SubTitle>
       </Card>
       <Card>
-        <Title>{data.title}</Title>
+        <Title variant="h3" fontWeight="bold">
+          {data.title}
+        </Title>
         <SubTitle>{data.subTitle}</SubTitle>
       </Card>
       <Card>
-        <Title>{data.title}</Title>
+        <Title variant="h3" fontWeight="bold">
+          {data.title}
+        </Title>
         <SubTitle>{data.subTitle}</SubTitle>
       </Card>
       <Card>
-        <Title>{data.title}</Title>
+        <Title variant="h3" fontWeight="bold">
+          {data.title}
+        </Title>
         <SubTitle>{data.subTitle}</SubTitle>
       </Card>
     </>

@@ -12,11 +12,13 @@ export default function News() {
     }
   `
   return (
-    <div>
-      <Title>ข่าวสารและกิจกรรม</Title>
+    <>
+      <Typography variant="h2" color="secondary" fontWeight="bold">
+        ข่าวสารและกิจกรรม
+      </Typography>
       <NewsCard />
       <NewsCard />
       <NewsCard />
-    </div>
+    </>
   )
 }

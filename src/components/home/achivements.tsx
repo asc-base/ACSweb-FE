@@ -4,18 +4,13 @@ import NewsCard from './newsCard'
 
 export default function Achivements() {
   const Container = styled('div')``
-  const Title = styled(Typography)`
-    && {
-      margin: 0;
-      font-weight: bold;
-      font-size: 24px;
-      color: #e8360e;
-    }
-  `
+
   return (
     <div>
       <Container>
-        <Title>ความสำเร็จสาขาวิชา</Title>
+        <Typography variant="h2" color="secondary" fontWeight="bold">
+          ความสำเร็จสาขาวิชา
+        </Typography>
       </Container>
       <NewsCard />
       <NewsCard />
