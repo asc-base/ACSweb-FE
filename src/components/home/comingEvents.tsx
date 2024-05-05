@@ -1,8 +1,9 @@
 import { Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
+import { ReactElement } from 'react'
 import EventsCard from './eventsCard'
 
-export default function ComingEvents() {
+export default function ComingEvents(): ReactElement {
   const Container = styled('div')``
   return (
     <>

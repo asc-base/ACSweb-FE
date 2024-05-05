@@ -4,8 +4,9 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { styled } from '@mui/material/styles'
+import { ReactElement } from 'react'
 
-export default function WorkCard() {
+export default function WorkCard(): ReactElement {
   const Container = styled('div')`
     && {
       margin: 20px;

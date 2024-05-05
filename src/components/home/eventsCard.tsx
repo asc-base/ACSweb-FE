@@ -1,7 +1,8 @@
 import { Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
+import { ReactElement } from 'react'
 
-export default function EventsCard() {
+export default function EventsCard(): ReactElement {
   const Card = styled('div')`
     && {
         display: flex;

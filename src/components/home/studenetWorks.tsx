@@ -1,8 +1,9 @@
 import { Grid, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
+import { ReactElement } from 'react'
 import WorkCard from './workCard'
 
-export default function StudentWorks() {
+export default function StudentWorks(): ReactElement {
   const Title = styled(Typography)`
     && {
       margin: 0;

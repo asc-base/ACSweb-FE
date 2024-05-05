@@ -1,6 +1,8 @@
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
-export default function NewsCard() {
+import { ReactElement } from 'react'
+
+export default function NewsCard(): ReactElement {
   const Container = styled('div')`
     && {
       margin: 20px;

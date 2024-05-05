@@ -1,8 +1,9 @@
 import { Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
+import { ReactElement } from 'react'
 import NewsCard from './newsCard'
 
-export default function Achivements() {
+export default function Achivements(): ReactElement {
   const Container = styled('div')``
 
   return (

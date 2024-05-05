@@ -1,7 +1,8 @@
 import { Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
+import { ReactElement } from 'react'
 
-export default function PublicRelation() {
+export default function PublicRelation(): ReactElement {
   const Container = styled('div')``
   const Title = styled(Typography)`
     && {

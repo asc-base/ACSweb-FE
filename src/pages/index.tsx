@@ -7,14 +7,14 @@ import StudentWorks from '@/components/home/studenetWorks'
 import Tumanail from '@/components/home/tumnail'
 import { Container, Grid } from '@mui/material'
 import { styled } from '@mui/material/styles'
+import { ReactElement } from 'react'
 
-const ContainerWrapper = styled(Container)`
-  && {
-    margin-top: 40px;
-  }
-`
-
-export default function HomePage() {
+export default function HomePage(): ReactElement {
+  const ContainerWrapper = styled(Container)`
+    && {
+      margin-top: 40px;
+    }
+  `
   return (
     <>
       <Tumanail />
