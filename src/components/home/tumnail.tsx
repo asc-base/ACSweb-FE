@@ -1,8 +1,9 @@
 import DESIGN_TOKEN from '@/styles/token'
 import { Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
+import { ReactElement } from 'react'
 
-export default function ThumbnailComponent() {
+export default function ThumbnailComponent(): ReactElement {
   const Thumbnail = styled('div')`
     position: relative;
     width: 100%;
