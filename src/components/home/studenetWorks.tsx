@@ -6,15 +6,18 @@ import WorkCard from './workCard'
 export default function StudentWorks(): ReactElement {
   const Title = styled(Typography)`
     && {
-      margin: 0;
     }
   `
-  const Container = styled('div')``
+  const Container = styled('div')`
+    && {
+      padding-bottom: 20px;
+    }
+  `
   return (
     <>
       <Container>
         <Title variant="h2" color="secondary" fontWeight="bold">
-          ผลงานนักศึกษา
+          ผลงานนักศึกษาตามรายวิชา
         </Title>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={4}>

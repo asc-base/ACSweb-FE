@@ -1,28 +1,26 @@
-import { Typography } from '@mui/material'
+import { Card, CardActionArea, CardContent, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { ReactElement } from 'react'
 
 export default function EventsCard(): ReactElement {
-  const Card = styled('div')`
+  const Container = styled('div')`
     && {
-        display: flex;
-        width: 100%;
-        height: 101px;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #F2F2F2;
-        border-radius: 16px;
-        margin-top: 10px;
-        `
-
+      padding: 5px;
+    }
+  `
+  const Cards = styled(Card)`
+    && {
+      background-color: #f2f2f2;
+    }
+  `
   const Title = styled(Typography)`
     && {
-      margin-left: 20px;
+      padding-left: 20px;
     }
   `
   const SubTitle = styled(Typography)`
     && {
-      margin-left: 20px;
+      padding-left: 20px;
     }
   `
   const data = {
@@ -32,36 +30,70 @@ export default function EventsCard(): ReactElement {
 
   return (
     <>
-      <Card>
-        <Title variant="h3" fontWeight="bold">
-          {data.title}
-        </Title>
-        <SubTitle>{data.subTitle}</SubTitle>
-      </Card>
-      <Card>
-        <Title variant="h3" fontWeight="bold">
-          {data.title}
-        </Title>
-        <SubTitle>{data.subTitle}</SubTitle>
-      </Card>
-      <Card>
-        <Title variant="h3" fontWeight="bold">
-          {data.title}
-        </Title>
-        <SubTitle>{data.subTitle}</SubTitle>
-      </Card>
-      <Card>
-        <Title variant="h3" fontWeight="bold">
-          {data.title}
-        </Title>
-        <SubTitle>{data.subTitle}</SubTitle>
-      </Card>
-      <Card>
-        <Title variant="h3" fontWeight="bold">
-          {data.title}
-        </Title>
-        <SubTitle>{data.subTitle}</SubTitle>
-      </Card>
+      <Container>
+        <Cards>
+          <CardActionArea>
+            <CardContent>
+              <Title variant="h3" fontWeight="bold">
+                {data.title}
+              </Title>
+              <SubTitle>{data.subTitle}</SubTitle>
+            </CardContent>
+          </CardActionArea>
+        </Cards>
+      </Container>
+
+      <Container>
+        <Cards>
+          <CardActionArea>
+            <CardContent>
+              <Title variant="h3" fontWeight="bold">
+                {data.title}
+              </Title>
+              <SubTitle>{data.subTitle}</SubTitle>
+            </CardContent>
+          </CardActionArea>
+        </Cards>
+      </Container>
+
+      <Container>
+        <Cards>
+          <CardActionArea>
+            <CardContent>
+              <Title variant="h3" fontWeight="bold">
+                {data.title}
+              </Title>
+              <SubTitle>{data.subTitle}</SubTitle>
+            </CardContent>
+          </CardActionArea>
+        </Cards>
+      </Container>
+
+      <Container>
+        <Cards>
+          <CardActionArea>
+            <CardContent>
+              <Title variant="h3" fontWeight="bold">
+                {data.title}
+              </Title>
+              <SubTitle>{data.subTitle}</SubTitle>
+            </CardContent>
+          </CardActionArea>
+        </Cards>
+      </Container>
+
+      <Container>
+        <Cards>
+          <CardActionArea>
+            <CardContent>
+              <Title variant="h3" fontWeight="bold">
+                {data.title}
+              </Title>
+              <SubTitle>{data.subTitle}</SubTitle>
+            </CardContent>
+          </CardActionArea>
+        </Cards>
+      </Container>
     </>
   )
 }

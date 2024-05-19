@@ -1,6 +1,7 @@
 import Achivements from '@/components/home/achivements'
 import Activities from '@/components/home/activities'
 import ComingEvents from '@/components/home/comingEvents'
+import Message from '@/components/home/message'
 import News from '@/components/home/news'
 import PublicRelation from '@/components/home/publicRelation'
 import StudentWorks from '@/components/home/studenetWorks'
@@ -30,17 +31,18 @@ export default function HomePage(): ReactElement {
       </ContainerWrapper>
       <ContainerWrapper>
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <News />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Achivements />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Activities />
           </Grid>
         </Grid>
         <StudentWorks />
+        <Message />
       </ContainerWrapper>
     </>
   )

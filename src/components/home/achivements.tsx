@@ -4,18 +4,20 @@ import { ReactElement } from 'react'
 import NewsCard from './newsCard'
 
 export default function Achivements(): ReactElement {
-  const Container = styled('div')``
+  const Container = styled('div')`
+    && {
+      padding-bottom: 20px;`
 
   return (
     <div>
       <Container>
-        <Typography variant="h2" color="secondary" fontWeight="bold">
+        <Typography variant="h2" color="secondary" fontWeight="bold" sx={{ paddingBottom: '20px' }}>
           ความสำเร็จสาขาวิชา
         </Typography>
+        <NewsCard />
+        <NewsCard />
+        <NewsCard />
       </Container>
-      <NewsCard />
-      <NewsCard />
-      <NewsCard />
     </div>
   )
 }
